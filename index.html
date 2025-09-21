@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatacuties 🐾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Flatacuties 🐾</h1>
+        <p>Vote for the cutest animal!</p>
+    </header>
+
+    <main class="container">
+        <!-- Animal List Section -->
+        <section class="animal-list-section">
+            <h2>Animals</h2>
+            <ul id="animal-list">
+                <!-- Animals will be dynamically loaded here -->
+            </ul>
+        </section>
+
+        <!-- Animal Details Section -->
+        <section class="animal-details-section">
+            <div id="animal-details">
+                <div class="placeholder">
+                    <h3>👆 Select an animal to see details</h3>
+                    <p>Click on any animal name from the list to view their image and vote count!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Animal Form (Bonus Feature) -->
+        <section class="add-animal-section">
+            <h2>Add New Animal</h2>
+            <form id="add-animal-form">
+                <div class="form-group">
+                    <label for="animal-name">Animal Name:</label>
+                    <input type="text" id="animal-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="animal-image">Image URL:</label>
+                    <input type="url" id="animal-image" required>
+                </div>
+                <button type="submit">Add Animal</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
